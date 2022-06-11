@@ -228,7 +228,7 @@ main {
   background: #0f1d10;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1001px) {
   .header {
     position: fixed;
     padding: 10px 0;
@@ -244,11 +244,11 @@ main {
             justify-content: center;
   }
   .header .logo {
-    width: 50px;
-    height: 50px;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    width: 65px;
+    height: 65px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .header .logo img {
     width: 100%;
@@ -261,10 +261,10 @@ main {
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 769px) {
   .header .logo {
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
   }
   main {
     padding-top: 56px;
@@ -297,11 +297,11 @@ main {
   color: var(--color-active);
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1001px) {
   .burger {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     margin-right: 16px;
   }
   .burger.active {
@@ -366,8 +366,8 @@ main {
 }
 
 .burger {
-  width: 30px;
-  height: 20px;
+  width: 50px;
+  height: 30px;
   position: relative;
   display: none;
 }
@@ -452,10 +452,10 @@ main {
           animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 769px) {
   .burger {
-    width: 20px;
-    height: 14px;
+    width: 33px;
+    height: 19px;
   }
 }
 
@@ -599,7 +599,7 @@ main {
   }
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1001px) {
   .burger {
     display: block;
   }
@@ -672,11 +672,11 @@ main {
   opacity: 1;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1001px) {
   .search {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-left: auto;
   }
 }
@@ -1373,7 +1373,7 @@ main {
 }
 
 .footer__container {
-  padding-top: 120px;
+  padding-top: 110px;
 }
 
 .footer__organization {
@@ -1428,7 +1428,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 54px;
 }
 
 .footer__column-information {
@@ -1441,13 +1441,6 @@ main {
 
 .footer__column-name {
   display: block;
-}
-
-.footer__column-name--information {
-  margin-bottom: 20px;
-}
-
-.footer__column-name--production {
   margin-bottom: 40px;
 }
 
@@ -1490,57 +1483,165 @@ main {
   font-family: "Montserrat";
 }
 
-@media screen and (max-width: 1200px) {
-  .footer__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
+@media screen and (min-width: 1001px) and (max-width: 1367px) {
   .footer__inner-top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-column-gap: 140px;
-            column-gap: 140px;
-    row-gap: 80px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .footer__inner-bottom {
+    padding-bottom: 46px;
+  }
+  .footer__address {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+  .footer__phone {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 4.9px;
+    margin-bottom: 34px;
+  }
+  .footer__column-name {
+    margin-bottom: 34px;
+  }
+  .footer__column-link {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+  .footer__column-name--production, .footer__column-name--information {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 4.9px;
+  }
+  .footer__organization {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
   }
 }
 
-@media screen and (max-width: 567px) {
-  .footer__phone {
-    font-size: 30px;
+@media screen and (min-width: 679px) and (max-width: 1000px) {
+  .footer__inner-top {
+    padding: 0;
+    margin-bottom: 50px;
   }
-  .footer__column-name {
-    font-size: 30px;
-  }
-  .footer__column-item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  .footer__column-link {
-    font-size: 20px;
-    letter-spacing: 4px;
-  }
-  .footer__container {
-    padding-top: 76px;
+  .footer__inner-bottom {
+    padding-bottom: 34px;
   }
   .footer__address {
-    font-size: 16px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    max-width: 276px;
+  }
+  .footer__phone {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 29px;
+  }
+  .footer__column-name {
+    margin-bottom: 29px;
+  }
+  .footer__column-link {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+  }
+  .footer__column-name--production, .footer__column-name--information {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
   }
   .footer__organization {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 3.5px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .footer .container {
+    padding-top: 78px;
+  }
+  .footer .fa-2x {
+    font-size: 1.5em;
+  }
+  .footer__inner-top {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 45px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  .footer__inner-bottom {
+    padding-bottom: 27px;
+  }
+  .footer__address {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+  .footer__phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__column-information {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .footer__column-link {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+  }
+  .footer__column-name {
+    margin-bottom: 20px;
+  }
+  .footer__column-name--production, .footer__column-name--information {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  .footer__organization {
+    font-weight: 400;
     font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
   }
 }
 
@@ -2809,6 +2910,1085 @@ textarea.materialize-textarea {
   }
   .payment-instruction__center {
     margin-bottom: 48px;
+  }
+}
+
+.suppliers {
+  padding-top: 188px;
+}
+
+.suppliers__name {
+  font-size: 47px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Idealist Sans Light SC";
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.suppliers__inner {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-blend-mode: multiply;
+  background-image: url(../assets/img/logistic/sup-map.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 78% auto;
+  background-color: rgba(14, 29, 16, 0.85);
+}
+
+.suppliers__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.suppliers__head-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suppliers__head-column .count-suppliers,
+.suppliers__head-column .count-countries {
+  font-size: 33px;
+  letter-spacing: 2px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.suppliers__head-column:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.suppliers__head-column:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.suppliers__head-column p {
+  font-size: 33px;
+  letter-spacing: 2px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.suppliers__content {
+  max-width: 560px;
+}
+
+.suppliers__text {
+  text-align: justify;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 33px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.suppliers__text p:first-child {
+  margin-bottom: 46px;
+}
+
+@media screen and (max-width: 1367px) {
+  .suppliers__text {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1.45833px;
+  }
+  .suppliers__name {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 7px;
+    margin-bottom: 30px;
+  }
+  .suppliers__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .suppliers__head-column .count-suppliers,
+  .suppliers__head-column .count-countries {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 2.33px;
+  }
+  .suppliers__head-column p {
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .suppliers {
+    padding-top: 160px;
+  }
+  .suppliers__inner {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-blend-mode: multiply;
+    background-image: url(../assets/img/logistic/sup-map.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: rgba(14, 29, 16, 0.85);
+  }
+  .suppliers__head {
+    margin-bottom: 50px;
+  }
+  .suppliers__text {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.45833px;
+  }
+  .suppliers__text p:first-child {
+    margin-bottom: 30px;
+  }
+  .suppliers__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 7px;
+    margin-bottom: 0px;
+  }
+  .suppliers__inner {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .suppliers-column .count-suppliers,
+  .suppliers-column .count-countries {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 2.33333px;
+  }
+  .suppliers-column p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.16667px;
+  }
+  .suppliers__head-column p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .suppliers {
+    padding-top: 147px;
+  }
+  .suppliers__name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+  }
+  .suppliers__inner {
+    padding-top: 45px;
+  }
+  .suppliers__head {
+    margin-bottom: 36px;
+  }
+  .suppliers__head-column .count-suppliers,
+  .suppliers__head-column .count-countries {
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: 2.33333px;
+  }
+  .suppliers__text {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1.16667px;
+  }
+}
+
+.suppliers-slider {
+  padding-bottom: 32px;
+}
+
+.suppliers-slider__name {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.suppliers-slider__slide {
+  height: 80px;
+}
+
+.suppliers-slider__slide--kommunarka {
+  background: url(../assets/img/logistic/suppliers/kommunarka.png);
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--lidskaye {
+  background: url(../assets/img/logistic/suppliers/lidskaye.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--logotip {
+  background: url(../assets/img/logistic/suppliers/logotip.png);
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--cola {
+  background: url(../assets/img/logistic/suppliers/cola.svg);
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--ganna {
+  background: url(../assets/img/logistic/suppliers/ganna.svg);
+  background-repeat: no-repeat;
+  background-size: 33% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--myasnaya {
+  background: url(../assets/img/logistic/suppliers/myasnaya.png);
+  background-repeat: no-repeat;
+  background-size: 33% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--ptizefabrica {
+  background: url(../assets/img/logistic/suppliers/ptizefabrica.png);
+  background-repeat: no-repeat;
+  background-size: 47% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--santabremor {
+  background: url(../assets/img/logistic/suppliers/santabremor.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--savushkin {
+  background: url(../assets/img/logistic/suppliers/savushkin.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--spartac {
+  background: url(../assets/img/logistic/suppliers/spartac.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--zdravushka {
+  background: url(../assets/img/logistic/suppliers/zdravushka.png);
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+}
+
+.suppliers-slider__slide--vitba {
+  background: url(../assets/img/logistic/suppliers/vitba.png);
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+}
+
+.suppliers-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.suppliers-slider .slick-dots button {
+  width: 15px;
+  height: 15px;
+}
+
+.suppliers-slider .slick-list {
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1367px) {
+  .suppliers-slider__name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 1.75px;
+    margin-bottom: 120px;
+  }
+  .suppliers-slider__slide {
+    height: 100px;
+  }
+  .suppliers-slider__slide--lidskaye {
+    background: url(../assets/img/logistic/suppliers/lidskaye.png);
+    background-repeat: no-repeat;
+    background-size: 48% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--ptizefabrica {
+    background: url(../assets/img/logistic/suppliers/ptizefabrica.png);
+    background-repeat: no-repeat;
+    background-size: 42% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--santabremor {
+    background: url(../assets/img/logistic/suppliers/santabremor.png);
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--savushkin {
+    background: url(../assets/img/logistic/suppliers/savushkin.png);
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+  }
+  .suppliers-slider .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .suppliers-slider .slick-dots button {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .suppliers-slider__name {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    letter-spacing: 1.75px;
+    margin-bottom: 110px;
+  }
+  .suppliers-slider__slide--kommunarka {
+    background: url(../assets/img/logistic/suppliers/kommunarka.png);
+    background-repeat: no-repeat;
+    background-size: 56% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--lidskaye {
+    background: url(../assets/img/logistic/suppliers/lidskaye.png);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--logotip {
+    background: url(../assets/img/logistic/suppliers/logotip.png);
+    background-repeat: no-repeat;
+    background-size: 32% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--ganna {
+    background: url(../assets/img/logistic/suppliers/ganna.svg);
+    background-repeat: no-repeat;
+    background-size: 27% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--myasnaya {
+    background: url(../assets/img/logistic/suppliers/myasnaya.png);
+    background-repeat: no-repeat;
+    background-size: 26% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--ptizefabrica {
+    background: url(../assets/img/logistic/suppliers/ptizefabrica.png);
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--santabremor {
+    background: url(../assets/img/logistic/suppliers/santabremor.png);
+    background-repeat: no-repeat;
+    background-size: 48% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--savushkin {
+    background: url(../assets/img/logistic/suppliers/savushkin.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--spartac {
+    background: url(../assets/img/logistic/suppliers/spartac.png);
+    background-repeat: no-repeat;
+    background-size: 44% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--zdravushka {
+    background: url(../assets/img/logistic/suppliers/zdravushka.png);
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--vitba {
+    background: url(../assets/img/logistic/suppliers/vitba.png);
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .suppliers-slider__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 3.5px;
+    margin-bottom: 40px;
+  }
+  .suppliers-slider__slide--kommunarka {
+    background: url(../assets/img/logistic/suppliers/kommunarka.png);
+    background-repeat: no-repeat;
+    background-size: 48% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--lidskaye {
+    background: url(../assets/img/logistic/suppliers/lidskaye.png);
+    background-repeat: no-repeat;
+    background-size: 34% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--logotip {
+    background: url(../assets/img/logistic/suppliers/logotip.png);
+    background-repeat: no-repeat;
+    background-size: 26% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--ganna {
+    background: url(../assets/img/logistic/suppliers/ganna.svg);
+    background-repeat: no-repeat;
+    background-size: 22% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--myasnaya {
+    background: url(../assets/img/logistic/suppliers/myasnaya.png);
+    background-repeat: no-repeat;
+    background-size: 22% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--ptizefabrica {
+    background: url(../assets/img/logistic/suppliers/ptizefabrica.png);
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--santabremor {
+    background: url(../assets/img/logistic/suppliers/santabremor.png);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--savushkin {
+    background: url(../assets/img/logistic/suppliers/savushkin.png);
+    background-repeat: no-repeat;
+    background-size: 42% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--spartac {
+    background: url(../assets/img/logistic/suppliers/spartac.png);
+    background-repeat: no-repeat;
+    background-size: 36% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--zdravushka {
+    background: url(../assets/img/logistic/suppliers/zdravushka.png);
+    background-repeat: no-repeat;
+    background-size: 56% auto;
+    background-position: center;
+  }
+  .suppliers-slider__slide--vitba {
+    background: url(../assets/img/logistic/suppliers/vitba.png);
+    background-repeat: no-repeat;
+    background-size: 56% auto;
+    background-position: center;
+  }
+  .suppliers-slider .slick-dots button {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.clients {
+  padding-top: 62px;
+  margin-bottom: 70px;
+}
+
+.clients__name {
+  font-size: 47px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Idealist Sans Light SC";
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clients__inner {
+  padding-top: 50px;
+  background-blend-mode: multiply;
+  background-image: url(../assets/img/logistic/sup-map.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 78% auto;
+  background-color: rgba(14, 29, 16, 0.85);
+}
+
+.clients__top {
+  max-width: 706px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.clients__top-text {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 33px;
+  color: #ffffff;
+  font-weight: 250;
+  font-family: "Montserrat";
+}
+
+.clients__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.clients__head-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
+}
+
+.clients__head-column span {
+  font-size: 33px;
+  letter-spacing: 2px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.clients__head-column p {
+  font-size: 33px;
+  letter-spacing: 2px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.clients__bottom {
+  max-width: 1120px;
+  margin-left: auto;
+}
+
+.clients__bottom p {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 33px;
+  color: #ffffff;
+  font-weight: 250;
+  font-family: "Montserrat";
+  text-align: justify;
+}
+
+@media screen and (max-width: 1367px) {
+  .clients {
+    margin-bottom: 50px;
+  }
+  .clients__name {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 7px;
+  }
+  .clients__top {
+    margin-bottom: 40px;
+  }
+  .clients__top-text {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1.45833px;
+  }
+  .clients__head-column {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 2.33333px;
+  }
+  .clients__head-column span {
+    font-size: 33px;
+    letter-spacing: 2px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+  }
+  .clients__head-column p {
+    margin: 0 auto;
+    max-width: 245px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 2.33px;
+    text-transform: uppercase;
+  }
+  .clients__bottom {
+    max-width: 1120px;
+    margin-left: auto;
+  }
+  .clients__bottom p {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1.45833px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .clients__name {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 7px;
+  }
+  .clients__top {
+    margin-bottom: 35px;
+  }
+  .clients__top-text {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.45833px;
+  }
+  .clients__bottom p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.45833px;
+  }
+  .clients__head-column span {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 2.33333px;
+  }
+  .clients__head-column p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .clients {
+    padding-top: 44px;
+  }
+  .clients__inner {
+    padding-top: 50px;
+    background-blend-mode: multiply;
+    background-image: url(../assets/img/logistic/sup-map.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: rgba(14, 29, 16, 0.85);
+  }
+  .clients__bottom p {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1.17px;
+  }
+  .clients__name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 5px;
+  }
+  .clients__top {
+    margin-bottom: 30px;
+  }
+  .clients__top-text {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1.17px;
+  }
+  .clients__head-column span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: 2.33333px;
+  }
+  .clients__head-column p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.16667px;
+  }
+}
+
+.clients-logos__button {
+  background-color: inherit;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.clients-logos__button.active {
+  color: #cfb276;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.clients-logos__buttons {
+  max-width: 234px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.clients-logos__slide {
+  height: 80px;
+}
+
+.clients-logos__slide--belavia {
+  background: url(../assets/img/logistic/horeca/logo1.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--vasilki {
+  background: url(../assets/img/logistic/horeca/vasilki.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--bonhotel {
+  background: url(../assets/img/logistic/horeca/bonHotel.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--shtolle {
+  background: url(../assets/img/logistic/horeca/shtolle.png);
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--pizzatempo {
+  background: url(../assets/img/logistic/horeca/pizzatempo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+}
+
+.clients-logos__slide--staroyeruslo {
+  background: url(../assets/img/logistic/horeca/starojeRuslo.png);
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--ban {
+  background: url(../assets/img/logistic/horeca/Ban.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--gruzin {
+  background: url(../assets/img/logistic/horeca/grusin.png);
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center;
+}
+
+.clients-logos__slide--lacreate {
+  background: url(../assets/img/logistic/horeca/lacreate.png);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.clients-logos .clients-logos__slider {
+  display: none;
+}
+
+.clients-logos .clients-logos__slider.active {
+  display: block;
+}
+
+.clients-logos .clients-logos__retailes {
+  display: none;
+}
+
+.clients-logos .clients-logos__retailes.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients-logos .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.clients-logos .slick-dots button {
+  width: 13px;
+  height: 13px;
+}
+
+.clients-logos .slick-list {
+  margin-bottom: 36px;
+}
+
+.clients-logos__retailes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.clients-logos__retailes-retaile {
+  width: 120px;
+  height: 80px;
+}
+
+.clients-logos__retailes-retaile img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1367px) {
+  .clients-logos__button {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.75px;
+  }
+  .clients-logos__buttons {
+    max-width: 300px;
+  }
+  .clients-logos__slide {
+    height: 100px;
+  }
+  .clients-logos__slide--staroyeruslo {
+    background: url(../assets/img/logistic/horeca/starojeRuslo.png);
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--shtolle {
+    background: url(../assets/img/logistic/horeca/shtolle.png);
+    background-repeat: no-repeat;
+    background-size: 76% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--ban {
+    background: url(../assets/img/logistic/horeca/Ban.png);
+    background-repeat: no-repeat;
+    background-size: 58% auto;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .clients-logos__slide--vasilki {
+    background: url(../assets/img/logistic/horeca/vasilki.png);
+    background-repeat: no-repeat;
+    background-size: 58% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--bonhotel {
+    background: url(../assets/img/logistic/horeca/bonHotel.png);
+    background-repeat: no-repeat;
+    background-size: 92% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--shtolle {
+    background: url(../assets/img/logistic/horeca/shtolle.png);
+    background-repeat: no-repeat;
+    background-size: 72% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--pizzatempo {
+    background: url(../assets/img/logistic/horeca/pizzatempo.png);
+    background-repeat: no-repeat;
+    background-size: 94% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--staroyeruslo {
+    background: url(../assets/img/logistic/horeca/starojeRuslo.png);
+    background-repeat: no-repeat;
+    background-size: 32% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--ban {
+    background: url(../assets/img/logistic/horeca/Ban.png);
+    background-repeat: no-repeat;
+    background-size: 54% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--gruzin {
+    background: url(../assets/img/logistic/horeca/grusin.png);
+    background-repeat: no-repeat;
+    background-size: 32% auto;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .clients-logos__slide--belavia {
+    background: url(../assets/img/logistic/horeca/logo1.png);
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--vasilki {
+    background: url(../assets/img/logistic/horeca/vasilki.png);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--bonhotel {
+    background: url(../assets/img/logistic/horeca/bonHotel.png);
+    background-repeat: no-repeat;
+    background-size: 62% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--shtolle {
+    background: url(../assets/img/logistic/horeca/shtolle.png);
+    background-repeat: no-repeat;
+    background-size: 56% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--pizzatempo {
+    background: url(../assets/img/logistic/horeca/pizzatempo.png);
+    background-repeat: no-repeat;
+    background-size: 64% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--staroyeruslo {
+    background: url(../assets/img/logistic/horeca/starojeRuslo.png);
+    background-repeat: no-repeat;
+    background-size: 26% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--ban {
+    background: url(../assets/img/logistic/horeca/Ban.png);
+    background-repeat: no-repeat;
+    background-size: 42% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--gruzin {
+    background: url(../assets/img/logistic/horeca/grusin.png);
+    background-repeat: no-repeat;
+    background-size: 24% auto;
+    background-position: center;
+  }
+  .clients-logos__slide--lacreate {
+    background: url(../assets/img/logistic/horeca/lacreate.png);
+    background-repeat: no-repeat;
+    background-size: 56% auto;
+    background-position: center;
+  }
+  .clients-logos .slick-dots button {
+    width: 9px;
+    height: 9px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

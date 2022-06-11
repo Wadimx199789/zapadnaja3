@@ -1,9 +1,14 @@
 const span = document.querySelectorAll(".counter");
+const countSuppliers = document.querySelector(".count-suppliers");
+const countCountries = document.querySelector(".count-countries");
+
 
 // Взять элемент, анимировать до 2000 за 2 секунды
 animate({elem: span[0], to: 360, sec: 5});
 animate({elem: span[1], to: 83, sec: 5});
 animate({elem: span[2], to: 100, sec: 5});
+animate({elem: countSuppliers, to:70, sec:5});
+animate({elem: countCountries, to:17, sec:5});
 
 function animate({elem, from = 0, to, sec}) {
   let tick = (to - from) / (60 * sec);
