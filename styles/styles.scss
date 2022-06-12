@@ -10,9 +10,15 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 :focus,
@@ -50,6 +56,12 @@ textarea {
   font-family: inherit;
 }
 
+input,
+textarea {
+ width:100%;
+	 margin-bottom:30px;
+}
+
 input::-ms-clear {
   display: none;
 }
@@ -65,6 +77,10 @@ button::-moz-focus-inner {
 
 a,
 a:visited {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -162,9 +178,69 @@ input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+:focus {
+  outline: none !important;
+}
+
+::-moz-focus-outer,
+::-moz-focus-inner {
+  border: 0px !important;
+  padding: 0;
+}
+
+a:focus,
+a:active,
+button:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
+input,
+textarea,
+input:active,
+textarea:active {
+  outline: none;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  visibility: hidden;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
+input,textarea {
+    -webkit-user-select: auto !important;
+    -khtml-user-select: auto !important;
+    -moz-user-select: auto !important;
+    -ms-user-select: auto !important;
+    -o-user-select: auto !important;
+    user-select: auto !important;  
+}
+
 
 textarea {
   overflow: auto;
