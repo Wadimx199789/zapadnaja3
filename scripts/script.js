@@ -1,6 +1,6 @@
 $(function () {
 	$(".slider-noDots").slick({
-		autoplay: true,
+		// autoplay: true,
 		speed: 1000,
 		mobileFirst: true,
 		dots: false,
@@ -52,6 +52,7 @@ $(function () {
 		]
 	});
 
+
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		focus: '#name'
@@ -60,7 +61,7 @@ $(function () {
 });
 
 $(".suppliers-slider__container").slick({
-	autoplay: true,
+	// autoplay: true,
 	autoplaySpeed: 3000,
 	speed: 1000,
 	mobileFirst: true,
