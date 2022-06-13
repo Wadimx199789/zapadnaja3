@@ -15,6 +15,3 @@ function toggle(){
 burgerButton.addEventListener("click",toggle);
 
 
-
-
-// // console.log(countCountries);

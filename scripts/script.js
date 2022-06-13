@@ -1,6 +1,7 @@
 $(function () {
 	$(".slider-noDots").slick({
-		speed: 700,
+		// autoplay: true,
+		speed: 1000,
 		mobileFirst: true,
 		dots: false,
 		slidesToShow: 1,
@@ -25,9 +26,9 @@ $(function () {
 	});
 
 	$(".slider__container").slick({
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 3000,
-		speed: 700,
+		speed: 1000,
 		mobileFirst: true,
 		dots: true,
 		slidesToShow: 1,
@@ -37,18 +38,18 @@ $(function () {
 		cssEase: 'linear',
 		prevArrow: '<div class="prevArrow"></div>',
 		nextArrow: '<div class="nextArrow"></div>',
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					arrows: true,
-				}
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		]
+		arrows: true,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 768,
+		// 		settings: {
+		// 			arrows: true,
+		// 		}
+		// 	}
+		// 	// You can unslick at a given breakpoint now by adding:
+		// 	// settings: "unslick"
+		// 	// instead of a settings object
+		// ]
 	});
 
 
@@ -60,9 +61,9 @@ $(function () {
 });
 
 $(".suppliers-slider__container").slick({
-	autoplay: true,
+	// autoplay: true,
 	autoplaySpeed: 3000,
-	speed: 700,
+	speed: 1000,
 	mobileFirst: true,
 	dots: true,
 	prevArrow: false,
