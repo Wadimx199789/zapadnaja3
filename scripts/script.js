@@ -26,7 +26,7 @@ $(function () {
 	});
 
 	$(".slider__container").slick({
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 1000,
 		mobileFirst: true,
@@ -38,20 +38,19 @@ $(function () {
 		cssEase: 'linear',
 		prevArrow: '<div class="prevArrow"></div>',
 		nextArrow: '<div class="nextArrow"></div>',
-		arrows: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 768,
-		// 		settings: {
-		// 			arrows: true,
-		// 		}
-		// 	}
-		// 	// You can unslick at a given breakpoint now by adding:
-		// 	// settings: "unslick"
-		// 	// instead of a settings object
-		// ]
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true,
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
 	});
-
 
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
