@@ -1,6 +1,6 @@
 $(function () {
 	$(".slider-noDots").slick({
-		// autoplay: true,
+		autoplay: true,
 		speed: 1000,
 		mobileFirst: true,
 		dots: false,
@@ -26,7 +26,7 @@ $(function () {
 	});
 
 	$(".slider__container").slick({
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 1000,
 		mobileFirst: true,
@@ -61,7 +61,7 @@ $(function () {
 });
 
 $(".suppliers-slider__container").slick({
-	// autoplay: true,
+	autoplay: true,
 	autoplaySpeed: 3000,
 	speed: 1000,
 	mobileFirst: true,
