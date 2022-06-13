@@ -1,7 +1,7 @@
 $(function () {
 	$(".slider-noDots").slick({
-		// autoplay: true,
-		speed: 1000,
+		autoplay: true,
+		speed: 700,
 		mobileFirst: true,
 		dots: false,
 		slidesToShow: 1,
@@ -26,9 +26,9 @@ $(function () {
 	});
 
 	$(".slider__container").slick({
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 3000,
-		speed: 1000,
+		speed: 700,
 		mobileFirst: true,
 		dots: true,
 		slidesToShow: 1,
@@ -61,9 +61,9 @@ $(function () {
 });
 
 $(".suppliers-slider__container").slick({
-	// autoplay: true,
+	autoplay: true,
 	autoplaySpeed: 3000,
-	speed: 1000,
+	speed: 700,
 	mobileFirst: true,
 	dots: true,
 	prevArrow: false,
