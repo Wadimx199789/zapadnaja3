@@ -5370,14 +5370,21 @@ textarea.materialize-textarea {
 
 }
 
-.catalog-inner__sidebar-item p {
+.sidebar-item p {
+  font-family: 'Idealist Sans Light SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 1.75px;
+  color: #FFFFFF;
 
   padding: 20px 78px;
   text-align: center;
   cursor: pointer;
 }
 
-.catalog-inner__sidebar-body {
+.sidebar-body {
   height: 0;
   opacity: 0;
   font-family: 'Montserrat';
@@ -5402,15 +5409,15 @@ textarea.materialize-textarea {
   transition: .5s;
 }
 
-.catalog-inner__sidebar-item.active {
-  .catalog-inner__sidebar-body {
+.sidebar-item.active {
+  .sidebar-body {
     height: auto;
     opacity: 1;
   }
 
 }
 
-.catalog-inner__sidebar-item:nth-child(odd) p {
+.sidebar-item:nth-child(odd) p {
   background: #2C331F;
 }
 
@@ -5449,7 +5456,7 @@ textarea.materialize-textarea {
     column-gap: 20px;
   }
 
-  .catalog-inner__sidebar-item {
+  .sidebar-item {
     p {
       padding: 21px 48px;
       font-weight: 400;
@@ -5508,9 +5515,11 @@ textarea.materialize-textarea {
   .catalog-inner__box {
     justify-content: center;
   }
+
   .catalog-inner__box-item {
     flex: 0 0 68%;
   }
+
   .catalog-inner__box-item a {
     font-weight: 300;
     font-size: 15px;
@@ -5518,15 +5527,706 @@ textarea.materialize-textarea {
     letter-spacing: 0.5px;
   }
 }
-@media screen and (max-width:660px){
-  .catalog-inner{
+
+@media screen and (max-width:660px) {
+  .catalog-inner {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .catalog-inner__box-item {
     flex: 0 0 52%;
   }
-  .catalog-inner__box{
+
+  .catalog-inner__box {
     padding-top: 50px;
+  }
+}
+
+// ---------------------------------catalog-page------------------------------------------------------//
+
+.page-head {
+  background: url(../assets/img/page/meet.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 200px 0;
+
+  &__title {
+    font-family: 'Idealist Sans Light SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 7px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+.page-inner {
+  column-gap: 40px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+
+  &__item {
+    font-size: 200px;
+  }
+
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 3%;
+    row-gap: 45px;
+
+    &-image {
+      margin-bottom: 18px;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &-item {
+      flex: 0 0 28%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+}
+
+.page-inner__item-name {
+  display: block;
+  max-width: 210px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  transition: .5s;
+  margin-bottom: 24px;
+
+  &:hover {
+    color: #cfb276;
+  }
+}
+
+
+
+
+//---------------------------------------catalog-box-----------------------------------//
+
+.page-box {
+  padding-top: 125px;
+  padding-bottom: 140px;
+}
+
+@media screen and (max-width:1367px) {
+  .page-head {
+    &__title {
+      font-family: 'Idealist Sans Light SC';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 45px;
+      letter-spacing: 7px;
+      color: #FFFFFF;
+    }
+  }
+
+  .page-inner {
+    column-gap: 20px;
+  }
+
+  .page-item {
+    p {
+      padding: 21px 48px;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 23px;
+      letter-spacing: 1.75px;
+    }
+  }
+
+  .page-inner__item-mame {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width:1001px) {
+  .page-inner {
+    &__box {
+      &-item {
+        flex: 0 0 48%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width:769px) {
+  .page-head {
+    padding: 180px 0;
+
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      letter-spacing: 5px;
+      color: #F5F5F5;
+    }
+  }
+
+  .page-box {
+    padding: 100px 0;
+  }
+
+
+
+  .page-inner__box {
+    justify-content: center;
+  }
+
+  .page-inner__box-item {
+    flex: 0 0 68%;
+  }
+
+  .page-inner__box-item a {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .page-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-inner__box-item {
+    flex: 0 0 52%;
+  }
+
+  .page-inner__box {
+    padding-top: 50px;
+  }
+}
+
+.moredetaild {
+  display: block;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 2.33333px;
+  color: #FFFFFF;
+}
+
+// ---------------------------------------------------page-description---------------------------------------//
+
+.pagedescription-inner__head {
+  background: #192415;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+
+  &-image {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    flex: 0 0 50%;
+  }
+
+  &-subtitle {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2.33333px;
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+
+  &-title {
+    font-family: 'Idealist Sans Light SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 1.75px;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+
+  }
+}
+
+.pagedescription-inner__energy-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.33333px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.pagedescription-inner__energy-value {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.pagedescription-inner__content {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2.33333px;
+  color: #FFFFFF;
+
+  p {
+    max-width: 660px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------catering----------------------------------------------------//
+
+// -------------------------------------catering-head----------------------------------------------//
+.catering-head {
+  position: relative;
+  height: 445px;
+  padding-top: 172px;
+  background-blend-mode: multiply;
+  background-image: url(../assets/img/catering/zhudro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(15, 29, 16, 0.6);
+
+  &__text {
+    &-name {
+      font-size: 57px;
+      letter-spacing: 4px;
+      color: #f5f5f5;
+      font-weight: 300;
+      font-family: "Idealist Sans Light SC";
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &-location {
+      display: block;
+      font-size: 34px;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+      font-weight: 250;
+      font-family: "Montserrat";
+      text-align: center;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid rgba(255, 255, 255, 0.3);
+
+    &:hover,
+    &:active {
+      border-left: 6px solid #ffffff;
+      border-top: 6px solid #ffffff;
+    }
+
+    transition: .5s;
+
+    &--next {
+      transform: rotate(135deg);
+      right: 65px
+    }
+
+    &--prev {
+      transform: rotate(-45deg);
+      left: 65px
+    }
+  }
+}
+
+@media screen and (max-width:1367px) {
+  .catering-head {
+    padding-top: 189px;
+
+    &__text {
+      &-name {
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: 7px;
+        color: #F5F5F5;
+        margin-bottom: 20px;
+
+      }
+
+      &-location {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 33px;
+        letter-spacing: 1.45833px;
+        color: #F5F5F5;
+      }
+    }
+
+    &__arrow {
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 3px solid rgba(255, 255, 255, 0.3);
+      border-top: 3px solid rgba(255, 255, 255, 0.3);
+
+      &--next {
+        transform: rotate(135deg);
+        right: 25px
+      }
+
+      &--prev {
+        transform: rotate(-45deg);
+        left: 25px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:1001px) {
+  .catering-head {
+    padding-top: 178px;
+
+    &__arrow {
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--next {
+        transform: rotate(135deg);
+        right: 20px
+      }
+
+      &--prev {
+        transform: rotate(-45deg);
+        left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:769px) {
+  .catering-head {
+    height: 310px;
+    padding-top: 120px;
+
+    &__arrow {
+      width: 14px;
+      height: 14px;
+
+      &--next {
+        transform: rotate(135deg);
+        right: 10px;
+      }
+
+      &--prev {
+        transform: rotate(-45deg);
+        left: 10px;
+      }
+    }
+
+    &__text {
+      max-width: 300px;
+      margin: 0 auto;
+
+      &-name {
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 5px;
+        margin-bottom: 14px;
+      }
+
+      &-location {
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1.45833px;
+        color: #F5F5F5;
+      }
+    }
+  }
+}
+
+// -----------------------------catering-content---------------------------------------------------//
+.catering-content {
+  padding-top: 60px;
+
+  &__inner {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    color: #f5f5f5;
+    font-weight: 250;
+    font-family: "Montserrat";
+
+    p:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    margin-bottom: 70px;
+  }
+
+  &__contacts {
+    &-name {
+      font-size: 25px;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+      font-weight: 250;
+      font-family: "Montserrat";
+      text-align: center;
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    &-links {
+      font-size: 25px;
+      letter-spacing: 2px;
+      line-height: 37px;
+      color: #f5f5f5;
+      font-weight: 250;
+      font-family: "Montserrat";
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      margin-bottom: 52px;
+    }
+
+    &-button {
+      display: block;
+      margin: 0 auto;
+      width: 280px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 24px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      font-weight: 300;
+      text-align: center;
+      font-family: "Idealist Sans Light SC";
+      background: rgba(207, 178, 118, 0.05);
+      border: 3px solid #FFFFFF;
+      border-radius: 15px;
+      transition: .5s;
+
+      &:hover,
+      &:active {
+        border: 3px solid #cfb276;
+        color: #cfb276;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1367px) {
+  .catering-content {
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: 1.45833px;
+      color: #F5F5F5;
+
+      p:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__contacts {
+      &-name {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1.75px;
+        color: #F5F5F5;
+      }
+
+      &-links {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 1.75px;
+        color: #F5F5F5;
+        margin-bottom: 35px;
+      }
+
+      &-button {
+        font-family: 'Idealist Sans Light SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 1.75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1001px) {
+  .catering-content {
+    padding-top: 75px;
+    padding-bottom: 40px;
+
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 1.45833px;
+
+      p:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      margin-bottom: 60px;
+    }
+
+    &__contacts {
+      &-name {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1.75px;
+      }
+
+      &-links {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 1.75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:769px) {
+  .catering-content {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    &__text {
+      font-style: normal;
+      font-weight: 100;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1.45833px;
+
+      p:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      margin-bottom: 50px;
+    }
+
+    &__contacts {
+      &-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+      }
+
+      &-links {
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        row-gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      &-button {
+        width: 190px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1px;
+      }
+    }
   }
 }
