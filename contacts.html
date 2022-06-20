@@ -69,9 +69,10 @@
                     <h1 class="contacts-map__title">
                         контакты
                     </h1>
-                    <a href="#call-form" class="popup-with-form contacts-map__button">
+                    <a href="#call-popup" class="show-popup contacts-map__button" data-effect="mfp-zoom-out">
                         заказать звонок
                     </a>
+                    <!-- <div><a href="#test-popup" class="show-popup" data-effect="mfp-zoom-out">Отдаление</a></div> -->
                 </div>
             </section>
             <section class="contacts-information">
@@ -124,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="contacts-information__button">
+                    <a href="#write-popup" class="show-popup contacts-information__button" data-effect="mfp-zoom-out">
                         написать директору
                     </a>
                 </div>
@@ -426,7 +427,58 @@
             </div>
         </footer>
 
-        <div id="call-form" class="white-popup mfp-hide">
+        <div id="write-popup" class="white-popup mfp-with-anim mfp-hide">
+            <form action="#" class="feedback-form">
+                <h1>Написать директору</h1>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваше имя:</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваш телефон:</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" class="materialize-textarea"></textarea>
+                    <div class="label-box">
+                        <label class="materialize-textarea-label">Ваш комментарий</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить" />
+                <button title="Close (Esc)" type="button" class="mfp-close">X</button>
+            </form>
+          </div>
+          <div id="call-popup" class="white-popup mfp-with-anim mfp-hide">
+            <form action="#" class="feedback-form">
+                <h1>Заказать звонок</h1>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваше имя:</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваш телефон:</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" class="materialize-textarea"></textarea>
+                    <div class="label-box">
+                        <label class="materialize-textarea-label">Ваш комментарий</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить" />
+                <button title="Close (Esc)" type="button" class="mfp-close">X</button>
+            </form>
+          </div>
+
+        <!-- <div id="call-form" class="white-popup mfp-hide">
             <form action="#" class="call-form">
                 <h1>Заказать звонок</h1>
                 <div>
@@ -450,7 +502,7 @@
                 <input type="submit" class="btn" value="Отправить" />
                 <button title="Close (Esc)" type="button" class="mfp-close">X</button>
             </form>
-        </div>
+        </div> -->
     </div>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/jquery.min.js"></script>
