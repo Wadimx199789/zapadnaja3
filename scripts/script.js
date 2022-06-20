@@ -1,7 +1,7 @@
 $(function () {
 	$(".slider-noDots").slick({
 		autoplay: true,
-		speed: 2700,
+		speed: 1000,
 		mobileFirst: true,
 		dots: false,
 		slidesToShow: 1,
@@ -27,8 +27,8 @@ $(function () {
 
 	$(".slider__container").slick({
 		autoplay: true,
-		autoplaySpeed: 3000,
-		speed: 2700,
+		autoplaySpeed: 2000,
+		speed: 1000,
 		mobileFirst: true,
 		dots: true,
 		slidesToShow: 1,
@@ -68,8 +68,8 @@ $(function () {
 
 $(".suppliers-slider__container").slick({
 	autoplay: true,
-	autoplaySpeed: 3000,
-	speed:2700,
+	autoplaySpeed: 2000,
+	speed:1000,
 	mobileFirst: true,
 	dots: true,
 	prevArrow: false,
@@ -116,8 +116,8 @@ $(".suppliers-slider__container").slick({
 });
 $(".clients-logos__slider").slick({
 	autoplay: true,
-	autoplaySpeed: 3000,
-	speed: 2700,
+	autoplaySpeed: 2000,
+	speed: 1000,
 	mobileFirst: true,
 	dots: true,
 	slidesToShow: 6,
@@ -162,8 +162,8 @@ $(".clients-logos__slider").slick({
 
 $(".pagedescription-inner__slider-box").slick({
 	// autoplay: true,
-	autoplaySpeed: 3000,
-	speed: 2700,
+	autoplaySpeed: 2000,
+	speed: 1000,
 	mobileFirst: true,
 	dots: true,
 	slidesToShow: 3,
