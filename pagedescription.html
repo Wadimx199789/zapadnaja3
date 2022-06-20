@@ -15,6 +15,7 @@
 
 <body>
     <div class="site-container">
+        <div class="overlay"></div>
         <header class="header">
             <div class="container header__container">
                 <a href="#" class="logo">
@@ -25,6 +26,26 @@
                         <li class="nav__item"><a href="./index.html" class="nav__link nav__link-active">главная</a></li>
                         <li class="nav__item"><a href="./about.html" class="nav__link">о нас</a></li>
                         <li class="nav__item"><a href="./catalog.html" class="nav__link">продукция</a></li>
+                        <li class="nav__item header__sidebar">
+                            <a class="nav__link header__sidebar-item">продукция</a>
+                            <ul class="header__sidebar-body">
+                                 <li>
+                                     <a href="#">Молочка</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Мясо</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Рыба</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Бакалея</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Прочее</a>
+                                 </li>
+                            </ul>
+                         </li>
                         <li class="nav__item"><a href="./logistics.html" class="nav__link">логистика</a></li>
                         <li class="nav__item"><a href="./catering.html" class="nav__link">общепит</a></li>
                         <li class="nav__item"><a href="./contacts.html" class="nav__link">контакты</a></li>
@@ -32,10 +53,12 @@
                         <li class="nav__item"><a href="./payment.html" class="nav__link">оплата</a></li>
                     </ul>
                 </nav>
-                <label class="search">
-                    <div class="search__icon"></div>
-                    <input type="text" class="search__form">
-                </label>
+                <div class="search">
+                    <input type="search" placeholder="Поиск...">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
                 <div class="burger">
                     <span></span>
                 </div>
@@ -174,16 +197,16 @@
                                         продукта:</span>
                                     <div class="pagedescription-inner__energy-values">
                                         <div class="pagedescription-inner__energy-value">
-                                            Калорийность:343 кКал.
+                                            Калорийность: 343 кКал.
                                         </div>
                                         <div class="pagedescription-inner__energy-value">
-                                            Белки:13.6 г. (~54 кКал)
+                                            Белки: 13.6 г. (~54 кКал)
                                         </div>
                                         <div class="pagedescription-inner__energy-value">
-                                            Жиры:31.9 г. (~287 кКал)
+                                            Жиры: 31.9 г. (~287 кКал)
                                         </div>
                                         <div class="pagedescription-inner__energy-value">
-                                            Углеводы:0 г. (~0 кКал)
+                                            Углеводы: 0 г. (~0 кКал)
                                         </div>
                                     </div>
                                 </div>
@@ -214,17 +237,77 @@
                                 <h4 class="pagedescription-inner__bottom-name">
                                     Смотрите также:
                                 </h4>
-                               <div class="pagedescription-inner__bottom-slider">
-                                    <div class="pagedescription-inner__bottom-slide">
-                                        <div class="pagedescription-inner__bottom-image">
-                                            <img src="" alt="">
+                                <div class="pagedescription-inner__slider">
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/hippart.png" alt="hippart">
                                         </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Тазобедренная часть свиная
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
                                     </div>
-                                    <div class="pagedescription-inner__bottom-slide"></div>
-                                    <div class="pagedescription-inner__bottom-slide"></div>
-                               </div>
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/halfpig.png" alt="hippart">
+                                        </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Свиные полутуши
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/cutlespork.png" alt="hippart">
+                                        </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Свиная котлетная
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/hippart.png" alt="hippart">
+                                        </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Тазобедренная часть свиная
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/halfpig.png" alt="hippart">
+                                        </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Свиные полутуши
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                    <div class="pagedescription-inner__slide">
+                                        <div class="pagedescription-inner__slide-image">
+                                            <img src="./assets/img/pagedescription/pork/cutlespork.png" alt="hippart">
+                                        </div>
+                                        <div class="pagedescription-inner__slide-name">
+                                            Свиная котлетная
+                                        </div>
+                                        <a href="#" class="pagedescription-inner__slide-link">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -343,10 +426,9 @@
     <script src="scripts/catalog.js"></script>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/jquery.min.js"></script>
-    <!-- Подключаем слайдер Slick -->
     <script src="scripts/main.js"></script>
-
     <script src="scripts/script.js"></script>
+    <script src="./scripts/header-sidebar.js"></script>
 </body>
 
 </html>

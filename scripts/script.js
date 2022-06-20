@@ -154,3 +154,46 @@ $(".clients-logos__slider").slick({
 	  ]
 });
 
+
+$(".pagedescription-inner__slider").slick({
+	// autoplay: true,
+	autoplaySpeed: 3000,
+	speed: 700,
+	mobileFirst: true,
+	dots: true,
+	slidesToShow: 2,
+	slidesToScroll: 2,
+	prevArrow: '<div class="pagedescription-inner__arrow--prev"></div>',
+	nextArrow: '<div class="pagedescription-inner__arrow--next"></div>',
+	pauseOnHover: false,
+	respondTo: 'min',
+	cssEase: 'linear',
+	// responsive: [
+	// 	{
+	// 	  breakpoint: 1279,
+	// 	  settings: {
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+			
+	// 	  }
+	// 	},
+	// 	{
+	// 	  breakpoint: 970,
+	// 	  settings: {
+	// 		slidesToShow: 2,
+	// 		slidesToScroll: 2
+	// 	  }
+	// 	},
+	// 	{
+	// 		breakpoint: 738,
+	// 		settings: {
+	// 		  slidesToShow: 3,
+	// 		  slidesToScroll: 3
+	// 		}
+	// 	  }
+	//   ]
+});
+
+
+
+
