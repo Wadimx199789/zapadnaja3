@@ -5358,6 +5358,7 @@ main {
       margin-bottom: 20px;
 
       a {
+        text-transform: lowercase;
         transition: .3s ease-in-out;
 
         &:hover {
@@ -6786,6 +6787,10 @@ textarea.materialize-textarea {
 }
 
 .stopcorruption-article {
+  .table-wrap {
+    overflow-y: scroll;
+  }
+
   margin-bottom: 0;
   padding-top: 200px;
 
@@ -6793,7 +6798,8 @@ textarea.materialize-textarea {
     font-weight: bold;
   }
 
-  &--fourth,&--fifth {
+  &--fourth,
+  &--fifth {
     .table {
       width: 100%;
       max-width: 100%;
@@ -6833,6 +6839,8 @@ textarea.materialize-textarea {
 
   }
 }
-.prevArrow,.nextArrow{
+
+.prevArrow,
+.nextArrow {
   cursor: pointer;
 }

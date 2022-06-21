@@ -5159,6 +5159,7 @@ main {
 }
 
 .sidebar-body ul li a {
+  text-transform: lowercase;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
@@ -6488,6 +6489,10 @@ textarea.materialize-textarea {
   padding-top: 200px;
 }
 
+.stopcorruption-article .table-wrap {
+  overflow-y: scroll;
+}
+
 .stopcorruption-article .h2 {
   font-weight: bold;
 }
@@ -6528,7 +6533,8 @@ textarea.materialize-textarea {
   }
 }
 
-.prevArrow, .nextArrow {
+.prevArrow,
+.nextArrow {
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
