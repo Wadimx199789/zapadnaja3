@@ -6527,4 +6527,8 @@ textarea.materialize-textarea {
     padding-top: 60px;
   }
 }
+
+.prevArrow, .nextArrow {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
