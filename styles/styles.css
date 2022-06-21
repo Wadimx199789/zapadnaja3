@@ -6370,4 +6370,161 @@ textarea.materialize-textarea {
     right: -10px;
   }
 }
+
+.stopcorruption-head {
+  padding: 200px 0;
+  background: url("../assets/img/stopcorruption/stopcorruption-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+}
+
+.stopcorruption-head__title {
+  font-family: 'Idealist Sans Light SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  letter-spacing: 7px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.stopcorruption-content {
+  padding-top: 90px;
+}
+
+.stopcorruption-content__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 1.45833px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.stopcorruption-content__text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.stopcorruption-content__links {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 1.45833px;
+  color: #FFFFFF;
+}
+
+.stopcorruption-content__links a {
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.stopcorruption-content__links a:hover {
+  color: #cfb276;
+}
+
+@media screen and (max-width: 1001px) {
+  .stopcorruption-head {
+    background-size: cover;
+    padding: 168px 0;
+  }
+  .stopcorruption-head__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 7px;
+    color: #FFFFFF;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .stopcorruption-content {
+    padding-top: 85px;
+  }
+  .stopcorruption-content__text {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .stopcorruption-content__text p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .stopcorruption-content__links {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .stopcorruption-head__title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 5px;
+  }
+  .stopcorruption-content {
+    padding-top: 70px;
+  }
+  .stopcorruption-content__text {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .stopcorruption-content__links {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.stopcorruption-article {
+  margin-bottom: 0;
+  padding-top: 200px;
+}
+
+.stopcorruption-article .h2 {
+  font-weight: bold;
+}
+
+.stopcorruption-article--fourth .table, .stopcorruption-article--fifth .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.stopcorruption-article--fourth .post-page table, .stopcorruption-article--fifth .post-page table {
+  margin-top: 1rem;
+}
+
+.stopcorruption-article--fourth .table-bordered, .stopcorruption-article--fifth .table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.stopcorruption-article--fourth .table-bordered td, .stopcorruption-article--fifth .table-bordered td {
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+
+@media screen and (max-width: 1001px) {
+  .stopcorruption-article {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .stopcorruption-article {
+    padding-top: 60px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
