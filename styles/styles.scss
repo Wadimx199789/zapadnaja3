@@ -6063,6 +6063,14 @@ main {
   background-size: cover;
   background-color: rgba(15, 29, 16, 0.6);
 
+  &--narodnaja {
+    background-image: url(../assets/img/catering/narodnaja-bg.png);
+  }
+
+  &--pritickogo {
+    background-image: url(../assets/img/catering/pritickogo-bg.png);
+  }
+
   &__text {
     &-name {
       font-size: 57px;
@@ -6251,6 +6259,8 @@ main {
   }
 
   &__contacts {
+    margin: 0 auto;
+
     &-name {
       font-size: 25px;
       letter-spacing: 2px;
@@ -6260,6 +6270,23 @@ main {
       text-align: center;
       display: block;
       margin-bottom: 32px;
+    }
+    &-address{
+      margin-bottom: 20px;
+      transition: .5s;
+      &:hover{
+        color:#cfb276;
+      }
+    }
+    &-address, &-timework{
+      display: block;
+      font-size: 25px;
+      letter-spacing: 2px;
+      line-height: 33px;
+      color: #f5f5f5;
+      font-weight: 250;
+      font-family: "Montserrat";
+      text-align: center;
     }
 
     &-links {
@@ -6331,6 +6358,11 @@ main {
         letter-spacing: 1.75px;
         color: #F5F5F5;
       }
+      &-address, &-timework{
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 1.75px;
+      }
 
       &-links {
         font-family: 'Montserrat';
@@ -6378,7 +6410,12 @@ main {
         line-height: 24px;
         letter-spacing: 1.75px;
       }
-
+      &-address, &-timework{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 1.75px;
+      }
       &-links {
         font-weight: 400;
         font-size: 20px;
@@ -6415,6 +6452,12 @@ main {
         line-height: 20px;
         letter-spacing: 1px;
         margin-bottom: 30px;
+      }
+      &-address, &-timework{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
       }
 
       &-links {
