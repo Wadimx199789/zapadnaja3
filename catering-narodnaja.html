@@ -109,7 +109,8 @@
                                 <a href="tel:+375172503157">+375 17 250 31 57</a>
                                 <a href="tel:+375293109375"> +375 29 310 93 75</a>
                             </div>
-                            <a href="#" class="catering-content__contacts-button">заказать расчет</a>
+                            <a href="#calculation-popup" class="show-popup catering-content__contacts-button"
+                            data-effect="mfp-zoom-out">заказать расчет</a>
                         </div>
                     </div>
                 </div>
@@ -225,9 +226,35 @@
                 </div>
             </div>
         </footer>
+        <div id="calculation-popup" class="white-popup mfp-with-anim mfp-hide">
+            <form action="#" class="feedback-form">
+                <h1>Заказать рассчет</h1>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваше имя:</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваш телефон:</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" class="materialize-textarea"></textarea>
+                    <div class="label-box">
+                        <label class="materialize-textarea-label">Ваш комментарий</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить" />
+                <button title="Close (Esc)" type="button" class="mfp-close">X</button>
+            </form>
+        </div>
     </div>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/jquery.magnific-popup.js"></script>
     <!-- Подключаем слайдер Slick -->
     <script src="scripts/main.js"></script>
 

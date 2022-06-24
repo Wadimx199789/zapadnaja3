@@ -26,7 +26,8 @@
                     <ul class="nav__list list-reset">
                         <li class="nav__item"><a href="./index.html" class="nav__link nav__link-active">главная</a></li>
                         <li class="nav__item"><a href="./about.html" class="nav__link">о нас</a></li>
-                        <li class="nav__item nav__item-production"><a href="./catalog.html" class="nav__link">продукция</a></li>
+                        <li class="nav__item nav__item-production"><a href="./catalog.html"
+                                class="nav__link">продукция</a></li>
                         <li class="nav__item header__sidebar">
                             <a class="nav__link header__sidebar-item">продукция</a>
                             <ul class="header__sidebar-body">
@@ -46,7 +47,7 @@
                                     <a href="#">Прочее</a>
                                 </li>
                             </ul>
-                         </li>
+                        </li>
                         <li class="nav__item"><a href="./logistics.html" class="nav__link">логистика</a></li>
                         <li class="nav__item"><a href="./catering.html" class="nav__link">общепит</a></li>
                         <li class="nav__item"><a href="./contacts.html" class="nav__link">контакты</a></li>
@@ -105,13 +106,15 @@
                             </p>
                         </div>
                         <div class="catering-content__contacts">
-                            <span class="catering-content__contacts-name">По всем интересующим Вас вопросам звоните:</span>
+                            <span class="catering-content__contacts-name">По всем интересующим Вас вопросам
+                                звоните:</span>
                             <div class="catering-content__contacts-links">
                                 <a href="tel:+375172346784">+375 17 234 67 84</a>
                                 <a href="tel:+375172639192">+375 17 263 91 92 </a>
                                 <a href="tel:+375295041095">+375 29 504 10 95</a>
                             </div>
-                            <a href="#" class="catering-content__contacts-button">заказать расчет</a>
+                            <a href="#calculation-popup" class="show-popup catering-content__contacts-button"
+                                data-effect="mfp-zoom-out">заказать расчет</a>
                         </div>
                     </div>
                 </div>
@@ -227,9 +230,36 @@
                 </div>
             </div>
         </footer>
+
+        <div id="calculation-popup" class="white-popup mfp-with-anim mfp-hide">
+            <form action="#" class="feedback-form">
+                <h1>Заказать рассчет</h1>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваше имя:</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required>
+                    <div class="label-box">
+                        <label>Ваш телефон:</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="message" class="materialize-textarea"></textarea>
+                    <div class="label-box">
+                        <label class="materialize-textarea-label">Ваш комментарий</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить" />
+                <button title="Close (Esc)" type="button" class="mfp-close">X</button>
+            </form>
+        </div>
     </div>
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/jquery.magnific-popup.js"></script>
     <!-- Подключаем слайдер Slick -->
     <script src="scripts/main.js"></script>
 
